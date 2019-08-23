@@ -1,0 +1,104 @@
+{
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "leetcode.endpoint": "leetcode-cn",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Monaco, Consolas, 'Courier New', monospace",
+    "editor.tabCompletion": "on",
+    "editor.suggestSelection": "first",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro Vivid",
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+
+    // python
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "python.pythonPath": "C://Software//Python//Python 3.7.3//python.exe",
+    "python.autoComplete.addBrackets": true,
+    "python.autoComplete.extraPaths": [
+        "C:/Software/Python/Python 3.7.3/",
+        "C:/Software/Python/Python 3.7.3/Lib",
+        "C:/Software/Python/Python 3.7.3/Lib/site-packages",
+        "C:/Software/Python/Python 3.7.3/DLLs"
+    ],
+    "python.jediEnabled": false,
+
+    "terminal.integrated.shell.windows": "C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe",
+    "code-runner.runInTerminal": true,
+    "files.autoSave": "afterDelay",
+     
+    // LaTeX
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "biber",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "external",
+    
+    "latex-workshop.view.pdf.external.command": {                // **********
+        "command": "C:/Software/SumatraPDF/SumatraPDF.exe", // 注意修改路径
+        "args": [                                                // **********
+            "%PDF%"
+        ]
+    },
+    
+    "latex-workshop.view.pdf.external.synctex": {                // **********
+        "command": "C:/Software/SumatraPDF/SumatraPDF.exe", // 注意修改路径
+        "args": [                                                // **********
+            "-forward-search",
+            "%TEX%",
+            "%LINE%",
+            "%PDF%"
+        ]
+    },
+    "latex-workshop.latex.autoBuild.run": "never",
+    "window.menuBarVisibility": "toggle",
+}
